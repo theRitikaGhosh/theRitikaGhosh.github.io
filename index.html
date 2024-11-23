@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Intro -->
+        <div id="intro" style="display: flex; justify-content: center; align-items: center; text-align: center; height: 100vh; background: linear-gradient(to right, #2c3e50, #4ca1af); position: relative;">
+            <div>
+                <h1 style="margin: 0; font-size: 3em; color: white;">RITIKA GHOSH<br />
+                    <span style="display: block;">PORTFOLIO</span>
+                </h1>
+                <!-- Fading Box for Financial Analyst -->
+                <span class="logo"></span>
+                <p style="font-style: italic; color: #f0f0f0; margin-top: 20px;">
+                    Empowering Leadership at the Intersection<br />
+                    of Technology and Management.
+                </p>
+                <ul class="actions" style="justify-content: center; margin-top: 80px;">
+                    <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <!-- Original Menu Button -->
+            <a href="#" class="menu-button" style="position: absolute; top: 20px; right: 20px; font-size: 1.5em; color: white; text-decoration: none;" onclick="toggleMenu()">☰ Menu</a>
+
+            <!-- Slide-in Menu -->
+            <div id="menu" style="position: fixed; top: 0; right: -300px; width: 300px; height: 100%; background-color: white; box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); transition: right 0.3s ease;">
+                <!-- Close (X) Button -->
+                <a href="#" style="position: absolute; top: 10px; right: 10px; font-size: 1.5em; color: grey; text-decoration: none;" onclick="toggleMenu()">&#10005;</a> <!-- X button -->
+
+                <ul style="list-style: none; padding: 20px; margin: 50px 0 0 0;">
+                    <li><a href="#" style="color: black; text-decoration: none; font-size: 1.2em;" onclick="toggleMenu()">Home</a></li>
+                    <li><a href="assets/Resume.LPL.pdf" download style="color: black; text-decoration: none; font-size: 1.2em;">Resume</a></li>
+                    <li><a href="assets/CoverLetter.pdf" download style="color: black; text-decoration: none; font-size: 1.2em;">Cover Letter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- JavaScript to toggle the slide-in menu -->
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("menu");
+                if (menu.style.right === "-300px") {
+                    menu.style.right = "0";
+                } else {
+                    menu.style.right = "-300px";
+                }
+            }
+
+            // Fading animation for Financial Analyst logo
+            window.onload = function() {
+                document.querySelector('.logo').classList.add('fade-out');
+            };
+        </script>
+
+        <!-- Add the CSS for fading effect -->
+        <style>
+            .logo {
+                font-size: 1.5em;
+                color: #f0f0f0;
+                background-color: rgba(0, 0, 0, 0.6);
+                padding: 10px;
+                border-radius: 5px;
+                opacity: 1;
+                transition: opacity 3s ease-out;
+            }
+
+            .logo.fade-out {
+                opacity: 0;
+            }
+        </style>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.kaggle.com/ritrix" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                <li><a href="https://www.linkedin.com/in/ritika-ghosh-47abab176/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/theRitikaGhosh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="#">SKILLSET<br />HIGHLIGHTS</a></h2>
+                </header>
+
+                <!-- Container for centering content on the left -->
+				<!-- Container for centering content on the left -->
+				<div style="text-align: left; margin-left: auto; margin-right: auto; max-width: 800px;">
+					<h3>Management & Leadership Expertise</h3>
+					<ul>
+						<li><strong>Agile Project Leadership:</strong> Experienced in managing cross-functional teams using Agile frameworks like Scrum and Kanban. Skilled in creating user stories, backlog prioritization, and burn-down charts, driving timely and efficient project delivery.</li>
+						<li><strong>Strategic Decision-Making:</strong> Expertise in financial modeling, capital budgeting (NPV, IRR), and scenario analysis to support high-level business decisions.</li>
+						<li><strong>Stakeholder Engagement:</strong> Strong interpersonal communication skills to align technical deliverables with business objectives, fostering collaboration and trust.</li>
+						<li><strong>Change Management:</strong> Proven ability to lead organizational transitions through innovative strategies, process optimization, and proactive leadership.</li>
+						<li><strong>Presentation and Influence:</strong> Adept at delivering data-driven insights and strategy presentations to executives, steering impactful decisions.</li>
+						<li><strong>Team Optimization:</strong> Demonstrated success in mentoring and leading high-performing teams, improving workflow efficiency and team morale.</li>
+					</ul>
+
+					<h3>Analytics & Technical Expertise</h3>
+					<ul>
+						<li><strong>Advanced Programming:</strong> Proficient in Python, R, SQL, and .NET for data analysis, predictive modeling, and application development.</li>
+						<li><strong>Business Intelligence & Visualization:</strong> Expertise in Power BI, Tableau, and SAS (Text and Business Intelligence) to derive actionable insights from data.</li>
+						<li><strong>Machine Learning & AI:</strong> Skilled in predictive modeling, building ML pipelines, and integrating innovative AI techniques like Retrieval-Augmented Generation (RAG).</li>
+						<li><strong>Cloud Infrastructure:</strong> Experienced in AWS, Azure, and Docker for system automation, security, and scalable application deployment.</li>
+						<li><strong>Data Management:</strong> Strong capabilities in data cleaning, wrangling, validation, and modeling for large datasets, ensuring analytical accuracy and reliability.</li>
+						<li><strong>DevOps & Automation:</strong> Hands-on expertise in Azure DevOps, CI/CD pipelines, and backup strategies, enhancing system uptime and operational efficiency.</li>
+						<li><strong>Technical Reporting:</strong> Ability to bridge technical complexity with clear documentation and storytelling for non-technical audiences.</li>
+					</ul>
+				</div>
+
+				<!-- Centered Image -->
+				<div style="text-align: center; margin-top: 20px;">
+					<img src="images/259-ND_PHL_24-Ritika Ghosh 5.jpg" 
+						alt="Financial Chart" 
+						style="max-width: 400px; height: auto; margin-bottom: 20px;">
+				</div>
+
+				<ul class="actions special">
+					<li><a href="#" class="button large">My Projects</a></li>
+				</ul>
+
+            </article>
+
+            <!-- Posts -->
+            <section class="posts">
+                <!-- First Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2023</span>
+                        <h2><a href="#">Hartford Healthcare<br />Web Resource<br />Optimization</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-11-22 162049.png" alt="Hartford Healthcare Web Resource Optimization" style="max-width: 100%; max-height: 250px;"></a>
+                    <p>
+                        I led the comprehensive analysis and optimization of Hartford HealthCare’s website, focusing on enhancing user engagement and improving the patient experience. By spearheading efforts to segment diverse user groups and identify high-interest health topics, I developed actionable recommendations that included streamlining site navigation, optimizing call-to-action elements, and restructuring the content hierarchy. Leveraging advanced data analysis alongside strategic insights, I ensured the project delivered a more intuitive, efficient, and patient-centric digital experience, aligning with organizational goals to improve accessibility and foster deeper connections with users.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Second Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">A Generative AI Solution<br />For Automated<br />Finance</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/6441d5f76d21e1e4dee9ffa2_Gen AI blog_Blog hero.webp" alt="Generative AI Solution" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led the development of an end-to-end, web-based workflow leveraging generative AI to revolutionize financial analysis for retail investors. This innovative system integrates three key components: a financial tool for automated buy/hold/sell recommendations, a retrieval-augmented generation (RAG) system for interactive document querying, and a financial modeling assistant powered by agentic agents for dynamic scenario analysis. Together, these tools address the inefficiencies of traditional research methods, offering scalable, cost-effective, and real-time decision-making capabilities. The workflow has demonstrated significant improvements in accuracy and efficiency, setting a new standard for investor-focused financial technology.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Third Project -->
+                <article>
+                    <header>
+                        <span class="date">December, 2023</span>
+                        <h2><a href="#">NestEgg Financial<br /> Management Application</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-09-11 042446.png" alt="NestEgg Financial Management Application" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led the development of a financial management app called NestEgg, designed to empower users with automated tools for savings, investment tracking, and goal setting. The app integrates three core components: real-time expense tracking for improved budgeting precision, advanced analytics for tailored financial insights, and a robust investment portfolio management system for informed decision-making. By leveraging cutting-edge data analysis and user-centric design, the app simplifies personal finance, helping users achieve their goals with greater efficiency. NestEgg’s innovative approach redefines financial management, providing a seamless, data-driven experience that addresses key pain points for modern users.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Fourth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Travelers<br />Modeling Competition</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/travelers-logo.jpg" alt="Travelers Modeling Competition" style="max-width: 100%; max-height: 240px;"></a>
+                    <p>
+                        As part of a case competition, I led the development of a predictive model aimed at optimizing call center resource allocation. Using XGBoost, we focused on identifying high-priority callers based on behavioral and interaction data. Through hyperparameter tuning and threshold optimization, we improved the model's recall by over 5%, ensuring higher accuracy in identifying high-value interactions, even at the cost of a slightly increased false positive rate. This allowed the call center to proactively engage with more customers, optimizing both resource allocation and customer satisfaction. Our final model outperformed the baseline in terms of precision, recall, and F1 score, delivering measurable improvements in operational efficiency and customer engagement.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Fifth Project -->
+                <article>
+                    <header>
+                        <span class="date">April, 2024</span>
+                        <h2><a href="#">Harvard Global<br />Case Competition</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Screenshot 2024-11-23 045346.jpg" alt="Harvard Case Competition" style="max-width: 100%; max-height: 300px;"></a>
+                    <p>
+                        Led a team in the Harvard Global Case Competition to address a complex acquisition case involving IBM and Equinix. We conducted in-depth market research, financial modeling, and valuation analysis to evaluate feasibility and strategic alignment. Our solution focused on identifying synergies, mitigating risks, and planning for seamless post-merger integration. Recognized for its strategic depth and innovative approach, our work earned us an invitation to the final ceremony, where our rigorous analysis and comprehensive strategy received commendation for addressing critical business challenges.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Sixth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Early Breast Cancer<br />Detection</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/breast-cancer-cell-alfred-pasieka.jpg" alt="Early Breast Cancer Detection" style="max-width: 100%; max-height: 285px;"></a>
+                    <p>
+                        Developed a predictive modeling solution to classify breast cancer as malignant or benign using a diagnostic dataset of 569 patient records. The project involved extensive data preprocessing, feature engineering, and the implementation of advanced machine learning models, including Logistic Regression, Decision Trees, Bootstrap Forests, and Neural Networks. Leveraged evaluation metrics such as accuracy, AUC-ROC, and misclassification rates to select the best-performing model, achieving significant improvements in diagnostic accuracy and transparency. This work highlights the potential of data-driven tools in early cancer detection and patient outcomes.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Seventh Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Walmart Sales Forecasting<br />using SAS</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/istockphoto-1205217071-612x612.jpg" alt="Walmart Sales Forecasting using SAS" style="max-width: 100%; max-height: 285px;"></a>
+                    <p>
+                        In this project, I developed a robust sales forecasting model for Walmart using time series analysis and ARIMAX models in SAS Studio. The primary focus was to analyze seasonality, trends, and the effects of holiday interventions on sales. I integrated multiple datasets, handled missing values, and prewhitened variables like temperature to remove seasonality and improve forecast accuracy. The final model achieved 80-90% accuracy across various bins, providing actionable insights for inventory management and revenue projection. These findings enabled Walmart to better anticipate seasonal sales patterns and optimize their inventory and promotional strategies, particularly during high-demand holiday periods.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Eighth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">McDonald’s Regional Sentiment Analysis<br />using Text Mining</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/mcdonalds-sign-rtr-jc-210831_1630423595339_hpMain_3_16x9.jpg" alt="McDonald’s Regional Sentiment Analysis using Text Mining" style="max-width: 100%; max-height: 285px;"></a>
+                    <p>
+                        This project involved conducting a comprehensive regional sentiment analysis of McDonald’s customer reviews from four states using SAS Text Miner. I utilized advanced text mining techniques, including TF-IDF, topic modeling, and clustering, to uncover the key drivers of customer satisfaction and identify operational challenges. By segmenting the data state-wise, I derived localized insights on service quality, menu preferences, and performance issues. Predictive models, such as Neural Networks and Logistic Regression, were employed to classify sentiment with high ROC scores (0.8+), ensuring reliable results. The analysis led to targeted recommendations for improving customer satisfaction through enhanced operational efficiency, localized menu offerings, and better service training.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Ninth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Personality Trait Detection Using<br />ML and Deep Learning</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Ritika_researchpaper.jpg" alt="Personality Trait Detection" style="max-width: 100%; max-height: 285px;"></a>
+                    <p>
+                        This project aimed to develop an innovative system for personality trait detection leveraging machine learning and deep learning algorithms. The system incorporated a user-friendly web interface where users could input free-form responses to thoughtfully designed questionnaires. These responses were processed and analyzed using techniques like TF-IDF, count vectorization, and deep learning models, including RNNs with LSTM cells. The project focused on bridging the gap in understanding personality traits by offering a more flexible and accurate alternative to traditional personality tests. By allowing subjective responses instead of rigid multiple-choice questions, the system provided personalized, insightful personality analysis. The RNN-based model demonstrated higher accuracy compared to traditional machine learning methods like Logistic Regression and SVM, making it a robust solution for applications in psychological assessment and mental health care.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+                <!-- Tenth Project -->
+                <article>
+                    <header>
+                        <span class="date">August, 2024</span>
+                        <h2><a href="#">Agile Leadership<br />in Insurance Predictive Modeling</a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/Lean-Agile-Leadership.jpg" alt="Agile Leadership in Insurance Predictive Modeling" style="max-width: 100%; max-height: 285px;"></a>
+                    <p>
+                        For my Agile Project Management course, I served as a Scrum Master/Product Owner, leading the development of a predictive MATIC scoring model for casualty insurance submissions. Using Agile methodologies and tools like JIRA, I managed sprint planning, user stories, and backlog prioritization to ensure seamless execution. Risk management frameworks, including SWOT and FMEA, were integrated to mitigate potential delays, enabling 100% on-time milestone delivery. I facilitated retrospectives and implemented continuous feedback loops, improving team collaboration and reducing redundancies by 15%. Additionally, I developed a comprehensive training program for underwriters, achieving a 95% proficiency rate in leveraging the new scoring model, transitioning workflows from intuition-based to data-driven decision-making.
+                    </p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button large">View More</a></li>
+                    </ul>
+                </article>
+
+            </section> <!-- Close the 'posts' section -->
+
+        </div> <!-- Close the 'main' div -->
+
+        <!-- Footer -->
+        <footer id="footer">
+            <section>
+                <!-- Contact Form -->
+                <form id="contact-form">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" required />
+                        </div>
+                        <div class="field">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" required />
+                        </div>
+                        <div class="field">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><button type="submit">Send Message</button></li>
+                    </ul>
+                </form>
+            </section>
+            <section class="split contact">
+                <section class="alt">
+                    <h3>Address</h3>
+                    <p>96 Colton Pl<br />
+                    Longmeadow, MA 01106</p>
+                </section>
+                <section>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+18609938639">(860) 993-8639</a></p>
+                </section>
+                <section>
+                    <h3>Email</h3>
+                    <p><a href="mailto:ritika.ghosh@uconn.edu">ritika.ghosh@uconn.edu</a></p>
+                </section>
+                <section>
+                    <h3>Social</h3>
+                    <ul class="icons alt">
+                        <li><a href="https://www.kaggle.com/ritrix" class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/ritika-ghosh-47abab176/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                        <li><a href="https://github.com/theRitikaGhosh" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                    </ul>
+                </section>
+            </section>
+        </footer>
+
+        <!-- JavaScript to handle the form submission -->
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                // Get the values from the form fields
+                var name = document.getElementById('name').value.trim();
+                var email = document.getElementById('email').value.trim();
+                var message = document.getElementById('message').value.trim();
+
+                // Validate the inputs (optional but recommended)
+                if (name === '' || email === '' || message === '') {
+                    alert('Please fill out all fields.');
+                    return;
+                }
+
+                // Construct the mailto link
+                var subject = encodeURIComponent('New message from ' + name);
+                var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+
+                // Create the mailto link
+                var mailtoLink = 'mailto:ritika.ghosh@uconn.edu' +
+                                 '?subject=' + subject +
+                                 '&body=' + body;
+
+                // Open the user's email client with the pre-filled message
+                window.location.href = mailtoLink;
+            });
+        </script>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
